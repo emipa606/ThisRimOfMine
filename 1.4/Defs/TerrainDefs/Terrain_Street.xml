@@ -16,6 +16,8 @@
     <scatterType>Rocky</scatterType>
     <affordances>
       <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
     </affordances>
     <generatedFilth>Filth_Dirt</generatedFilth>
     <fertility>0.0</fertility>
@@ -39,6 +41,8 @@
     <scatterType>Rocky</scatterType>
     <affordances>
       <li>Light</li>
+      <li>Medium</li>
+      <li>Heavy</li>
     </affordances>
     <fertility>0.0</fertility>
     <tags>

@@ -1,5 +1,8 @@
 # Changelog for ThisRimOfMine
 
+1.4.1 - Roads and pavements should now have heavy affordance
+
+
 1.4.0 - First publish.
 Used DeepL to update translations for ChineseSimplified, French, German
 

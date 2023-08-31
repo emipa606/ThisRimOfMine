@@ -50,9 +50,6 @@ TODO:
 - general rebalancing
 - thematic quests and events
 
-If you want to contribute to this project, you can join the Discord:
-https://discord.gg/Q2jX6RS4J9
-
 ![Image](https://i.imgur.com/PwoNOj4.png)
 
 
@@ -65,3 +62,4 @@ https://discord.gg/Q2jX6RS4J9
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2998095518]Last updated 2023-08-31
