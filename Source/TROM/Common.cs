@@ -7,8 +7,8 @@ namespace TROM;
 [StaticConstructorOnStartup]
 public static class Common
 {
-    public static readonly List<ThingDef> Furniture = new List<ThingDef>
-    {
+    public static readonly List<ThingDef> Furniture =
+    [
         ThingDefOf.AncientBed,
         ThingDefOf.AncientLamp,
         ThingDefOf.DiningChair,
@@ -33,5 +33,5 @@ public static class Common
         TROMThingDefOf.CrateWashingMachine,
         TROMThingDefOf.Shelf,
         TROMThingDefOf.TubeTelevision
-    };
+    ];
 }

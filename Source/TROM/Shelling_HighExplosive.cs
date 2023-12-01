@@ -19,11 +19,11 @@ public class Shelling_HighExplosive : Bombardment
     private static readonly Material ProjectileMaterial =
         MaterialPool.MatFrom("Things/Projectile/Bullet_Big", ShaderDatabase.Transparent, Color.white);
 
-    public new static readonly SimpleCurve DistanceChanceFactor = new SimpleCurve
-    {
+    public new static readonly SimpleCurve DistanceChanceFactor =
+    [
         new CurvePoint(0f, 1f),
         new CurvePoint(1f, 0.1f)
-    };
+    ];
 
     public new int bombIntervalTicks = 18;
 
@@ -38,7 +38,7 @@ public class Shelling_HighExplosive : Bombardment
 
     private BombardmentProjectile projectile = new BombardmentProjectile();
 
-    private List<BombardmentProjectile> projectiles = new List<BombardmentProjectile>();
+    private List<BombardmentProjectile> projectiles = [];
 
     public new int randomFireRadius = 25;
 
@@ -218,7 +218,7 @@ public class Shelling_HighExplosive : Bombardment
 
         if (projectiles == null)
         {
-            projectiles = new List<BombardmentProjectile>();
+            projectiles = [];
         }
     }
 }

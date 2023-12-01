@@ -9,13 +9,13 @@ namespace TROM;
 
 public class SketchResolver_FloorFillSpecific : SketchResolver
 {
-    private static readonly HashSet<IntVec3> tmpWalls = new HashSet<IntVec3>();
+    private static readonly HashSet<IntVec3> tmpWalls = [];
 
-    private static readonly HashSet<IntVec3> tmpVisited = new HashSet<IntVec3>();
+    private static readonly HashSet<IntVec3> tmpVisited = [];
 
     private static readonly Stack<Pair<int, int>> tmpStack = new Stack<Pair<int, int>>();
 
-    private static readonly List<IntVec3> tmpCells = new List<IntVec3>();
+    private static readonly List<IntVec3> tmpCells = [];
 
     private static ThingDef floorStuff;
 

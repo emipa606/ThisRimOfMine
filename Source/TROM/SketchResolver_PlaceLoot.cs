@@ -16,7 +16,7 @@ internal class SketchResolver_PlaceLoot : SketchResolver
     protected override void ResolveInt(ResolveParams parms)
     {
         var sketch = new Sketch();
-        var list = parms.GetCustom<List<ThingDef>>("allowedContainers") ?? new List<ThingDef> { TROMThingDefOf.Shelf };
+        var list = parms.GetCustom<List<ThingDef>>("allowedContainers") ?? [TROMThingDefOf.Shelf];
         float obj = parms.TryGetCustom("chance", out obj) ? obj : 0.1f;
         float scaling = parms.TryGetCustom("scaling", out scaling) ? scaling : 1f;
         var custom = parms.GetCustom<Loot.lootType>("lootType");

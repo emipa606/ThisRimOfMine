@@ -11,9 +11,9 @@ internal class GenStep_TROM_Terrain : GenStep
 {
     private static bool debug_WarnedMissingTerrain;
 
-    private static readonly HashSet<IntVec3> tmpVisited = new HashSet<IntVec3>();
+    private static readonly HashSet<IntVec3> tmpVisited = [];
 
-    private static readonly List<IntVec3> tmpIsland = new List<IntVec3>();
+    private static readonly List<IntVec3> tmpIsland = [];
 
     public override int SeedPart => 262606459;
 

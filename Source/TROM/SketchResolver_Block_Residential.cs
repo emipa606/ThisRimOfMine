@@ -8,7 +8,7 @@ namespace TROM;
 
 internal class SketchResolver_Block_Residential : SketchResolver
 {
-    private readonly List<CellRect> roofList = new List<CellRect>();
+    private readonly List<CellRect> roofList = [];
     private int AL;
 
     private bool alleywayAllow;
@@ -32,7 +32,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
 
     private Map map;
 
-    private List<CellRect> roofListTmp = new List<CellRect>();
+    private List<CellRect> roofListTmp = [];
 
     protected override bool CanResolveInt(ResolveParams parms)
     {
@@ -229,10 +229,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
             parms.sketch.MergeAt(resolveParams.sketch, new IntVec3(num2, 0, 0));
             if (sketchResolverDef == TROMSketchResolverDefOf.HouseEdge)
             {
-                roofListTmp = new List<CellRect>
-                {
-                    new CellRect(0, 0, num, height)
-                };
+                roofListTmp = [new CellRect(0, 0, num, height)];
             }
             else
             {
@@ -314,10 +311,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
             parms.sketch.MergeAt(resolveParams2.sketch, new IntVec3(0, 0, 37 - num4));
             if (sketchResolverDef2 == TROMSketchResolverDefOf.HouseEdge)
             {
-                roofListTmp = new List<CellRect>
-                {
-                    new CellRect(0, 0, num, height)
-                };
+                roofListTmp = [new CellRect(0, 0, num, height)];
             }
             else
             {
@@ -389,10 +383,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
             parms.sketch.MergeAt(resolveParams3.sketch, new IntVec3(37 - num6, 0, 37));
             if (sketchResolverDef3 == TROMSketchResolverDefOf.HouseEdge)
             {
-                roofListTmp = new List<CellRect>
-                {
-                    new CellRect(0, 0, num, height)
-                };
+                roofListTmp = [new CellRect(0, 0, num, height)];
             }
             else
             {
@@ -464,10 +455,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
             parms.sketch.MergeAt(resolveParams4.sketch, new IntVec3(37, 0, num8));
             if (sketchResolverDef4 == TROMSketchResolverDefOf.HouseEdge)
             {
-                roofListTmp = new List<CellRect>
-                {
-                    new CellRect(0, 0, num, height)
-                };
+                roofListTmp = [new CellRect(0, 0, num, height)];
             }
             else
             {
@@ -536,7 +524,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
 
         if (sr != TROMSketchResolverDefOf.HouseEdge_R11_1)
         {
-            return new List<CellRect>();
+            return [];
         }
 
         var list = new List<CellRect> { new CellRect(0, 0, 11, 7) };

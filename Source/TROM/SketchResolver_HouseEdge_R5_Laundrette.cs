@@ -12,10 +12,7 @@ internal class SketchResolver_HouseEdge_R5_Laundrette : SketchResolver
 
     public static readonly int z = 9;
 
-    public static readonly List<CellRect> roofList = new List<CellRect>
-    {
-        new CellRect(0, 0, 5, 9)
-    };
+    public static readonly List<CellRect> roofList = [new CellRect(0, 0, 5, 9)];
 
     private IntVec3 b;
 

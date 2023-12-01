@@ -7,14 +7,14 @@ namespace TROM;
 
 internal class GenStep_TROM_Blocks : GenStep
 {
-    private readonly List<IntVec2> noSpecial = new List<IntVec2>
-    {
+    private readonly List<IntVec2> noSpecial =
+    [
         new IntVec2(2, 3),
         new IntVec2(3, 2),
         new IntVec2(3, 3),
         new IntVec2(3, 4),
         new IntVec2(4, 3)
-    };
+    ];
 
     private int blockHeight;
 

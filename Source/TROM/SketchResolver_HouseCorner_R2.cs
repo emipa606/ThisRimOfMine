@@ -12,11 +12,11 @@ internal class SketchResolver_HouseCorner_R2 : SketchResolver
 
     public static readonly int z = 11;
 
-    public static readonly List<CellRect> roofList = new List<CellRect>
-    {
+    public static readonly List<CellRect> roofList =
+    [
         new CellRect(0, 4, 11, 7),
         new CellRect(4, 0, 7, 4)
-    };
+    ];
 
     protected override bool CanResolveInt(ResolveParams parms)
     {

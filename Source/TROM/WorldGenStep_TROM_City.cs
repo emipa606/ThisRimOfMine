@@ -7,7 +7,7 @@ namespace TROM;
 
 internal class WorldGenStep_TROM_City : WorldGenStep
 {
-    private readonly List<int> cities = new List<int>();
+    private readonly List<int> cities = [];
 
     public override int SeedPart => 349793029;
 

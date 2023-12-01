@@ -12,10 +12,7 @@ internal class SketchResolver_HouseCorner_RG : SketchResolver
 
     public static readonly int z = 7;
 
-    public static readonly List<CellRect> roofList = new List<CellRect>
-    {
-        new CellRect(0, 0, 11, 7)
-    };
+    public static readonly List<CellRect> roofList = [new CellRect(0, 0, 11, 7)];
 
     private bool switche;
 

@@ -22,11 +22,11 @@ internal class SketchResolver_Block_GasStation : SketchResolver
 
     private Map map;
 
-    private List<CellRect> RLT = new List<CellRect>();
+    private List<CellRect> RLT = [];
 
-    private List<CellRect> roofList = new List<CellRect>();
+    private List<CellRect> roofList = [];
 
-    private List<CellRect> roofListTmp = new List<CellRect>();
+    private List<CellRect> roofListTmp = [];
 
     private Rot4 rotB;
 
@@ -39,8 +39,8 @@ internal class SketchResolver_Block_GasStation : SketchResolver
 
     protected override void ResolveInt(ResolveParams parms)
     {
-        roofListTmp = new List<CellRect>();
-        roofList = new List<CellRect>();
+        roofListTmp = [];
+        roofList = [];
         var = Rand.ElementByWeight(variant.normal, 0.7f, variant.squatters, 0.3f);
         map = parms.GetCustom<Map>("map");
         b = parms.GetCustom<IntVec3>("b");
@@ -749,7 +749,7 @@ internal class SketchResolver_Block_GasStation : SketchResolver
 
         if (sr != TROMSketchResolverDefOf.HouseEdge_R11_1)
         {
-            return new List<CellRect>();
+            return [];
         }
 
         var list = new List<CellRect> { new CellRect(0, 0, 11, 7) };
