@@ -1,5 +1,8 @@
 # Changelog for ThisRimOfMine
 
+1.4.3 - Fixed pavement color, thanks Keshash
+
+
 1.4.2 - Storages in cities will now spawn with no items allowed
 
 

@@ -4,6 +4,8 @@
 
 Update of Asterions mod https://steamcommunity.com/sharedfiles/filedetails/?id=2586396923
 
+- Storages will now spawn with no items allowed in cities
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	

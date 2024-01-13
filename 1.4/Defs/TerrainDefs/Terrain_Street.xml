@@ -32,6 +32,8 @@
     <texturePath>Terrain/Surfaces/PavedTile</texturePath>
     <edgeType>Hard</edgeType>
     <pathCost>0</pathCost>
+    <color>(140,140,140)</color>
+    <isPaintable>true</isPaintable>
     <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
     <statBases>
       <Beauty>-1</Beauty>
