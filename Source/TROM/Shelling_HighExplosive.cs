@@ -141,9 +141,9 @@ public class Shelling_HighExplosive : Bombardment
         GenExplosion.DoExplosion(targetCell, map, randomInRange, bomb, thing, -1, -1f, null, weaponDef, thingDef);
     }
 
-    public override void Draw()
+    protected override void DrawAt(Vector3 drawLoc, bool flip = false)
     {
-        base.Draw();
+        base.DrawAt(drawLoc, flip);
         if (projectiles.NullOrEmpty())
         {
             return;
@@ -169,7 +169,7 @@ public class Shelling_HighExplosive : Bombardment
             }
         }
 
-        FireUtility.TryStartFireIn(intVec, Map, Rand.Range(0.1f, 0.925f));
+        FireUtility.TryStartFireIn(intVec, Map, Rand.Range(0.1f, 0.925f), null);
     }
 
     private void GetNextExplosionCell()

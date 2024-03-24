@@ -74,6 +74,8 @@ internal class GenStep_TROM_Blocks : GenStep
             num2++;
         }
 
+        return;
+
         IntVec2 RandomSpecialBlock()
         {
             var returnRandom = false;

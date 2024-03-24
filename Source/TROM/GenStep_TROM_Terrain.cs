@@ -146,11 +146,13 @@ internal class GenStep_TROM_Terrain : GenStep
                 continue;
             }
 
-            for (var i = 0; i < tmpIsland.Count; i++)
+            foreach (var intVec3 in tmpIsland)
             {
-                map.terrainGrid.SetTerrain(tmpIsland[i], adjacentImpassableTerrain);
+                map.terrainGrid.SetTerrain(intVec3, adjacentImpassableTerrain);
             }
         }
+
+        return;
 
         bool Impassable(IntVec3 x)
         {

@@ -10,7 +10,6 @@ public static class Startup
     static Startup()
     {
         Harmony.DEBUG = false;
-        var harmony = new Harmony("TROM");
-        harmony.PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("TROM").PatchAll(Assembly.GetExecutingAssembly());
     }
 }
