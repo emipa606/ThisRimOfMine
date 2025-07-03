@@ -6,12 +6,12 @@ namespace TROM.Sketches;
 
 internal class SketchResolver_Intersection_BarbedWire : SketchResolver
 {
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         var sketch = new Sketch();
         if (parms.rect != null)

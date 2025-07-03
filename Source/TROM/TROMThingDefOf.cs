@@ -12,7 +12,7 @@ public static class TROMThingDefOf
 
     public static ThingDef AncientConcreteBarrier;
 
-    public static ThingDef AncientContainer;
+    public static ThingDef AncientMediumContainer;
 
     public static ThingDef AncientHydrant;
 

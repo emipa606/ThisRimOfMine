@@ -9,11 +9,11 @@ internal class GenStep_TROM_Blocks : GenStep
 {
     private readonly List<IntVec2> noSpecial =
     [
-        new IntVec2(2, 3),
-        new IntVec2(3, 2),
-        new IntVec2(3, 3),
-        new IntVec2(3, 4),
-        new IntVec2(4, 3)
+        new(2, 3),
+        new(3, 2),
+        new(3, 3),
+        new(3, 4),
+        new(4, 3)
     ];
 
     private int blockHeight;
@@ -94,7 +94,7 @@ internal class GenStep_TROM_Blocks : GenStep
 
     private void GenerateBlock(Map map, blockType bt, int cx, int cz)
     {
-        var parms = default(ResolveParams);
+        var parms = default(SketchResolveParams);
         parms.sketch = new Sketch();
         parms.monumentSize = new IntVec2(blockSize, blockSize);
         parms.SetCustom("map", map);
@@ -117,7 +117,7 @@ internal class GenStep_TROM_Blocks : GenStep
         }
     }
 
-    private void GenerateBlockGasStation(Map map, ResolveParams parms, int cx, int cz)
+    private void GenerateBlockGasStation(Map map, SketchResolveParams parms, int cx, int cz)
     {
         var num = cx + 4;
         var num2 = cz + 4;
@@ -151,7 +151,7 @@ internal class GenStep_TROM_Blocks : GenStep
         sketch.Spawn(map, new IntVec3(num, 0, num2), null);
     }
 
-    private void GenerateBlockResidential(Map map, ResolveParams parms, int cx, int cz)
+    private void GenerateBlockResidential(Map map, SketchResolveParams parms, int cx, int cz)
     {
         var newX = cx + 4;
         var newZ = cz + 4;
@@ -170,7 +170,7 @@ internal class GenStep_TROM_Blocks : GenStep
         sketch.Spawn(map, new IntVec3(newX, 0, newZ), null);
     }
 
-    private void GenerateBlockSuperstore(Map map, ResolveParams parms, int cx, int cz)
+    private void GenerateBlockSuperstore(Map map, SketchResolveParams parms, int cx, int cz)
     {
         var num = cx + 4;
         var num2 = cz + 4;

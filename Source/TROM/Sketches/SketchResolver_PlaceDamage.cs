@@ -11,12 +11,12 @@ internal class SketchResolver_PlaceDamage : SketchResolver
 {
     private float damageScaleNormal;
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         var Furniture = Common.Furniture;
         if (parms.monumentSize == null)

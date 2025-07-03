@@ -5,10 +5,9 @@ using Verse;
 namespace TROM;
 
 [HarmonyPatch(typeof(GenGrid), "InNoBuildEdgeArea")]
-internal class PATCH_InNoBuildEdgeArea
+internal class GenGrid_InNoBuildEdgeArea
 {
-    [HarmonyPostfix]
-    private static void TROM_InNoBuildEdgeArea(Map map, ref bool __result)
+    private static void Postfix(Map map, ref bool __result)
     {
         try
         {

@@ -6,12 +6,12 @@ namespace TROM.Sketches;
 
 internal class SketchResolver_Intersection_Checkpoint : SketchResolver
 {
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         var sketch = new Sketch();
         sketch.AddThing(TROMThingDefOf.AncientConcreteBarrier, new IntVec3(1, 0, 2), Rot4.North);

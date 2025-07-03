@@ -6,12 +6,12 @@ namespace TROM.Sketches;
 
 internal class SketchResolver_Street_Barricade : SketchResolver
 {
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         var sketch = new Sketch();
         if (parms.GetCustom<Rot4>("direction") == Rot4.North)

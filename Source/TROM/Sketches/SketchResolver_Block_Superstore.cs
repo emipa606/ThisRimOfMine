@@ -13,12 +13,12 @@ internal class SketchResolver_Block_Superstore : SketchResolver
     private Map map;
     private Rot4 rotB;
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         var sketch = new Sketch();
         rotB = parms.GetCustom<Rot4>("rotationBlock");
@@ -181,7 +181,7 @@ internal class SketchResolver_Block_Superstore : SketchResolver
         }
 
         sketch.AddThing(TROMThingDefOf.AncientRustedTruck, new IntVec3(4, 0, 13), Rot4.South);
-        sketch.AddThing(TROMThingDefOf.AncientContainer, new IntVec3(3, 0, 18), Rot4.North);
+        sketch.AddThing(TROMThingDefOf.AncientMediumContainer, new IntVec3(3, 0, 18), Rot4.North);
         sketch.AddThing(ThingDefOf.Cooler, new IntVec3(7, 0, 26), Rot4.West);
         sketch.AddThing(ThingDefOf.Cooler, new IntVec3(7, 0, 25), Rot4.West);
         sketch.AddThing(ThingDefOf.AncientFence, new IntVec3(8, 0, 12), Rot4.North);
@@ -384,8 +384,8 @@ internal class SketchResolver_Block_Superstore : SketchResolver
 
         var list = new List<CellRect>
         {
-            new CellRect(0, 18, 38, 20),
-            new CellRect(7, 13, 26, 5)
+            new(0, 18, 38, 20),
+            new(7, 13, 26, 5)
         };
         var list2 = new List<CellRect>();
         foreach (var item in list)

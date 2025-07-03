@@ -13,13 +13,13 @@ public class SketchResolver_FloorFillSpecific : SketchResolver
 
     private static readonly HashSet<IntVec3> tmpVisited = [];
 
-    private static readonly Stack<Pair<int, int>> tmpStack = new Stack<Pair<int, int>>();
+    private static readonly Stack<Pair<int, int>> tmpStack = new();
 
     private static readonly List<IntVec3> tmpCells = [];
 
     private static ThingDef floorStuff;
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         floorStuff = parms.thingCentral;
         var terrainDef = TerrainDefOf.WoodPlankFloor;
@@ -112,7 +112,7 @@ public class SketchResolver_FloorFillSpecific : SketchResolver
         }
     }
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }

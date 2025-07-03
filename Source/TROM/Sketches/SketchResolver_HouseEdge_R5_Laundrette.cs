@@ -12,7 +12,7 @@ internal class SketchResolver_HouseEdge_R5_Laundrette : SketchResolver
 
     public static readonly int z = 9;
 
-    public static readonly List<CellRect> roofList = [new CellRect(0, 0, 5, 9)];
+    public static readonly List<CellRect> roofList = [new(0, 0, 5, 9)];
 
     private IntVec3 b;
 
@@ -24,12 +24,12 @@ internal class SketchResolver_HouseEdge_R5_Laundrette : SketchResolver
 
     private Rot4 rotB;
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         parms.rect = new CellRect(parms.rect.Value.minX, parms.rect.Value.minZ, x, z);
         map = parms.GetCustom<Map>("map");

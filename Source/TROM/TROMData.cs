@@ -2,11 +2,4 @@ using Verse;
 
 namespace TROM;
 
-internal class TROMData : MapComponent
-{
-    public TROMData(Map map)
-        : base(map)
-    {
-        this.map = map;
-    }
-}
+internal class TROMData(Map map) : MapComponent(map);

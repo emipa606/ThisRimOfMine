@@ -11,12 +11,12 @@ internal class SketchResolver_HouseEdge_R11_1 : SketchResolver
 
     public static readonly int z = 11;
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         parms.rect = new CellRect(parms.rect.Value.minX, parms.rect.Value.minZ, x, z);
         var thingDef = Filters.RandStone();

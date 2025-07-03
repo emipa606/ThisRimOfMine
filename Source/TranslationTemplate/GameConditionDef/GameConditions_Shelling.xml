@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: nearby shelling -->
+  <GameCondition_ShellingNearby.label>nearby shelling</GameCondition_ShellingNearby.label>
+  <!-- EN: Some nearby position is being heavily shelled. Beware of stray artillery strikes. -->
+  <GameCondition_ShellingNearby.description>Some nearby position is being heavily shelled. Beware of stray artillery strikes.</GameCondition_ShellingNearby.description>
+  <!-- EN: The shelling is over. -->
+  <GameCondition_ShellingNearby.endMessage>The shelling is over.</GameCondition_ShellingNearby.endMessage>
+  <!-- EN: Some nearby position is being heavily shelled. Beware of stray artillery strikes. -->
+  <GameCondition_ShellingNearby.letterText>Some nearby position is being heavily shelled. Beware of stray artillery strikes.</GameCondition_ShellingNearby.letterText>
+</LanguageData>

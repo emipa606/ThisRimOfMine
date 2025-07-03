@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Trapped -->
+  <RuinousTrap.label>Trapped</RuinousTrap.label>
+  <!-- EN: When the civil war broke out, many people thought it would only last a couple of weeks. It's been years since government military surrounded the rebels in the capital, cutting off all supply lines. The civilian population trapped in the city are suffering from hunger, disease and shelling. -->
+  <RuinousTrap.description>When the civil war broke out, many people thought it would only last a couple of weeks. It's been years since government military surrounded the rebels in the capital, cutting off all supply lines. The civilian population trapped in the city are suffering from hunger, disease and shelling.</RuinousTrap.description>
+  <!-- EN: When the civil war broke out, many people thought it would only last a couple of weeks. It's been years since government military surrounded the rebels in the capital, cutting off all supply lines. The civilian population trapped in the city are suffering from hunger, disease and shelling. -->
+  <RuinousTrap.scenario.description>When the civil war broke out, many people thought it would only last a couple of weeks. It's been years since government military surrounded the rebels in the capital, cutting off all supply lines. The civilian population trapped in the city are suffering from hunger, disease and shelling.</RuinousTrap.scenario.description>
+  <!-- EN: Trapped -->
+  <RuinousTrap.scenario.name>Trapped</RuinousTrap.scenario.name>
+  <!-- EN: Three survivors trapped in a ruined city. -->
+  <RuinousTrap.scenario.summary>Three survivors trapped in a ruined city.</RuinousTrap.scenario.summary>
+</LanguageData>

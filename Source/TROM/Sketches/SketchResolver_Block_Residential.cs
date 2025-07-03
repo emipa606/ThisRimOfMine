@@ -34,12 +34,12 @@ internal class SketchResolver_Block_Residential : SketchResolver
 
     private List<CellRect> roofListTmp = [];
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         alleywayDone = false;
         alleywayAllow = parms.GetCustom<bool>("alleywayAllow");
@@ -62,7 +62,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
         }
     }
 
-    private void ResolveCorners(ResolveParams parms)
+    private void ResolveCorners(SketchResolveParams parms)
     {
         var parms2 = parms;
         parms2.sketch = new Sketch();
@@ -183,7 +183,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
         parms.sketch.MergeAt(parms5.sketch, new IntVec3(37, 0, 37));
     }
 
-    private void ResolveEdges(ResolveParams parms)
+    private void ResolveEdges(SketchResolveParams parms)
     {
         var num = 0;
         var height = 0;
@@ -454,7 +454,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
         }
     }
 
-    private void ResolveCourtyard(ResolveParams parms)
+    private void ResolveCourtyard(SketchResolveParams parms)
     {
         var parms2 = parms;
         parms2.sketch = new Sketch();
@@ -495,7 +495,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
         };
     }
 
-    private List<CellRect> GetRoofList(SketchResolverDef sr, ResolveParams rp = default)
+    private List<CellRect> GetRoofList(SketchResolverDef sr, SketchResolveParams rp = default)
     {
         if (sr == TROMSketchResolverDefOf.HouseEdge_R5_Laundrette)
         {
@@ -507,7 +507,7 @@ internal class SketchResolver_Block_Residential : SketchResolver
             return [];
         }
 
-        var list = new List<CellRect> { new CellRect(0, 0, 11, 7) };
+        var list = new List<CellRect> { new(0, 0, 11, 7) };
         if (!rp.GetCustom<bool>("backhouseAllow"))
         {
             return list;

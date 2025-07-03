@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: ancient ATM -->
+  <CrateATM.label>ancient ATM</CrateATM.label>
+  <!-- EN: ... -->
+  <CrateATM.description>...</CrateATM.description>
+  <!-- EN: ancient barrel -->
+  <CrateBarrel.label>ancient barrel</CrateBarrel.label>
+  <!-- EN: ... -->
+  <CrateBarrel.description>...</CrateBarrel.description>
+  <!-- EN: ancient refrigerator -->
+  <CrateFridge.label>ancient refrigerator</CrateFridge.label>
+  <!-- EN: ... -->
+  <CrateFridge.description>...</CrateFridge.description>
+  <!-- EN: storage crate -->
+  <CrateStorage.label>storage crate</CrateStorage.label>
+  <!-- EN: ... -->
+  <CrateStorage.description>...</CrateStorage.description>
+  <!-- EN: ancient vending machine -->
+  <CrateVendingMachine.label>ancient vending machine</CrateVendingMachine.label>
+  <!-- EN: ... -->
+  <CrateVendingMachine.description>...</CrateVendingMachine.description>
+  <!-- EN: ancient washing machine -->
+  <CrateWashingMachine.label>ancient washing machine</CrateWashingMachine.label>
+  <!-- EN: ... -->
+  <CrateWashingMachine.description>...</CrateWashingMachine.description>
+</LanguageData>

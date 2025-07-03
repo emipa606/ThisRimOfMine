@@ -10,12 +10,12 @@ internal class SketchResolver_HouseEdge_R7_Parking : SketchResolver
 
     public static readonly int z = 7;
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         if (parms.rect != null)
         {

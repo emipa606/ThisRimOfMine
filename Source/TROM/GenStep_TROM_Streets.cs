@@ -21,7 +21,7 @@ internal class GenStep_TROM_Streets : GenStep
         {
             for (var j = 6; j <= map.Size.z; j += 46)
             {
-                var parms2 = default(ResolveParams);
+                var parms2 = default(SketchResolveParams);
                 parms2.sketch = new Sketch();
                 parms2.monumentSize = new IntVec2(38, 8);
                 SketchGen.Generate(TROMSketchResolverDefOf.Street, parms2).Spawn(map, new IntVec3(i, 0, j), null,
@@ -33,7 +33,7 @@ internal class GenStep_TROM_Streets : GenStep
         {
             for (var k = -32; k <= map.Size.z; k += 46)
             {
-                var parms3 = default(ResolveParams);
+                var parms3 = default(SketchResolveParams);
                 parms3.sketch = new Sketch();
                 parms3.monumentSize = new IntVec2(8, 38);
                 SketchGen.Generate(TROMSketchResolverDefOf.Street, parms3).Spawn(map, new IntVec3(i, 0, k), null,
@@ -48,7 +48,7 @@ internal class GenStep_TROM_Streets : GenStep
         {
             for (var j = 6; j <= map.Size.z; j += 46)
             {
-                var parms2 = default(ResolveParams);
+                var parms2 = default(SketchResolveParams);
                 parms2.sketch = new Sketch();
                 parms2.monumentSize = new IntVec2(8, 8);
                 SketchGen.Generate(TROMSketchResolverDefOf.Intersection, parms2).Spawn(map, new IntVec3(i, 0, j), null,

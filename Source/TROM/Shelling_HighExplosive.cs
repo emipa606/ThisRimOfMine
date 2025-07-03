@@ -31,12 +31,12 @@ public class Shelling_HighExplosive : Bombardment
 
     public new int explosionCount = 20;
 
-    public new FloatRange explosionRadiusRange = new FloatRange(3f, 6f);
+    public new FloatRange explosionRadiusRange = new(3f, 6f);
     public new float impactAreaRadius = 15f;
 
     private IntVec3 nextExplosionCell = IntVec3.Invalid;
 
-    private BombardmentProjectile projectile = new BombardmentProjectile();
+    private BombardmentProjectile projectile = new();
 
     private List<BombardmentProjectile> projectiles = [];
 
@@ -58,7 +58,7 @@ public class Shelling_HighExplosive : Bombardment
         }
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         if (Destroyed)
         {

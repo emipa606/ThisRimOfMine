@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: city central -->
+  <CityCentral.label>city central</CityCentral.label>
+  <!-- EN: ... -->
+  <CityCentral.description>...</CityCentral.description>
+  <!-- EN: city outskirts -->
+  <CityOutskirts.label>city outskirts</CityOutskirts.label>
+  <!-- EN: ... -->
+  <CityOutskirts.description>...</CityOutskirts.description>
+</LanguageData>

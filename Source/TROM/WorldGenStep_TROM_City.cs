@@ -11,7 +11,7 @@ internal class WorldGenStep_TROM_City : WorldGenStep
 
     public override int SeedPart => 349793029;
 
-    public override void GenerateFresh(string seed)
+    public override void GenerateFresh(string seed, PlanetLayer layer)
     {
         GenerateCityCentral();
     }
@@ -24,7 +24,7 @@ internal class WorldGenStep_TROM_City : WorldGenStep
                     select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate(int x)
                 {
                     var tile = Find.WorldGrid[x];
-                    if (!tile.biome.canBuildBase || !tile.biome.implemented)
+                    if (!tile.PrimaryBiome.canBuildBase || !tile.PrimaryBiome.implemented)
                     {
                         return 0f;
                     }
@@ -34,14 +34,14 @@ internal class WorldGenStep_TROM_City : WorldGenStep
                         return 0f;
                     }
 
-                    if (!tile.biome.canAutoChoose)
+                    if (!tile.PrimaryBiome.canAutoChoose)
                     {
                         return 0f;
                     }
 
                     return !tile.potentialRivers.NullOrEmpty() || !tile.potentialRoads.NullOrEmpty()
                         ? 0f
-                        : tile.biome.settlementSelectionWeight;
+                        : tile.PrimaryBiome.settlementSelectionWeight;
                 }, out var result) && IsValidTileForNewCity(result))
             {
                 return result;
@@ -71,7 +71,7 @@ internal class WorldGenStep_TROM_City : WorldGenStep
 
     public void GenerateCityCentral()
     {
-        var tiles = Find.WorldGrid.tiles;
+        var tiles = Find.WorldGrid.Tiles.ToArray();
         var num = (int)(1000f * Find.World.info.planetCoverage);
         var num2 = (int)(100f * Find.World.info.planetCoverage);
         var num3 = 0;
@@ -92,14 +92,14 @@ internal class WorldGenStep_TROM_City : WorldGenStep
                     continue;
                 }
 
-                tile.biome = TROMBiomeDefOf.CityCentral;
+                tile.PrimaryBiome = TROMBiomeDefOf.CityCentral;
                 cities.Add(num4);
                 GenerateCityArea(num4);
                 num3++;
             }
             else
             {
-                tile.biome = TROMBiomeDefOf.CityCentral;
+                tile.PrimaryBiome = TROMBiomeDefOf.CityCentral;
                 cities.Add(num4);
                 GenerateCityArea(num4);
                 num3++;
@@ -109,11 +109,11 @@ internal class WorldGenStep_TROM_City : WorldGenStep
 
     public void GenerateCityArea(int tile)
     {
-        var list = new List<int>();
+        var list = new List<PlanetTile>();
         Find.WorldGrid.GetTileNeighbors(tile, list);
         foreach (var index in list)
         {
-            Find.WorldGrid.tiles[index].biome = TROMBiomeDefOf.CityOutskirts;
+            Find.WorldGrid.Tiles.ToArray()[index].PrimaryBiome = TROMBiomeDefOf.CityOutskirts;
         }
     }
 }

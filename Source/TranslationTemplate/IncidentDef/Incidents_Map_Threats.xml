@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Nearby shelling -->
+  <ShellingNearby.label>Nearby shelling</ShellingNearby.label>
+  <!-- EN: Nearby Shelling -->
+  <ShellingNearby.letterLabel>Nearby Shelling</ShellingNearby.letterLabel>
+  <!-- EN: Some nearby position is being heavily shelled. Beware of stray artillery strikes. -->
+  <ShellingNearby.letterText>Some nearby position is being heavily shelled. Beware of stray artillery strikes.</ShellingNearby.letterText>
+</LanguageData>

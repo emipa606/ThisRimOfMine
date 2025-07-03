@@ -10,8 +10,6 @@ internal class TROMDef
 
     public static GenStepDef TROM_ElevationFertility;
 
-    public static GenStepDef TROM_Terrain;
-
     public static GenStepDef TROM_Streets;
 
     public static GenStepDef TROM_Blocks;

@@ -7,10 +7,9 @@ using Verse;
 namespace TROM.HarmonyPatches;
 
 [HarmonyPatch(typeof(MapGenerator), "GenerateMap")]
-internal class PATCH_GenerateMap
+internal class MapGenerator_GenerateMap
 {
-    [HarmonyPrefix]
-    private static bool TROM_GenerateMap(MapParent parent, ref MapGeneratorDef mapGenerator)
+    private static bool Prefix(MapParent parent, ref MapGeneratorDef mapGenerator)
     {
         try
         {
@@ -28,8 +27,7 @@ internal class PATCH_GenerateMap
         }
     }
 
-    [HarmonyPostfix]
-    private static void TROM_GenerateMap_Forbid(MapParent parent, ref Map __result)
+    private static void Postfix(MapParent parent, ref Map __result)
     {
         try
         {

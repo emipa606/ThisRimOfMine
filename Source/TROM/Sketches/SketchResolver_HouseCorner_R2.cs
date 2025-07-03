@@ -14,16 +14,16 @@ internal class SketchResolver_HouseCorner_R2 : SketchResolver
 
     public static readonly List<CellRect> roofList =
     [
-        new CellRect(0, 4, 11, 7),
-        new CellRect(4, 0, 7, 4)
+        new(0, 4, 11, 7),
+        new(4, 0, 7, 4)
     ];
 
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         parms.rect = new CellRect(parms.rect.Value.minX, parms.rect.Value.minZ, x, z);
         var stuff = Filters.RandStone();

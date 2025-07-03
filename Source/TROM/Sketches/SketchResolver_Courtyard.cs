@@ -5,12 +5,12 @@ namespace TROM.Sketches;
 
 internal class SketchResolver_Courtyard : SketchResolver
 {
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         var custom = parms.GetCustom<bool>("alleywayDone");
         var num = Rand.Range(0, 100);

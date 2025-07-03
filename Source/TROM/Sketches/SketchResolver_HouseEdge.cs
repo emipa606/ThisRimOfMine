@@ -7,12 +7,12 @@ namespace TROM.Sketches;
 
 internal class SketchResolver_HouseEdge : SketchResolver
 {
-    protected override bool CanResolveInt(ResolveParams parms)
+    protected override bool CanResolveInt(SketchResolveParams parms)
     {
         return true;
     }
 
-    protected override void ResolveInt(ResolveParams parms)
+    protected override void ResolveInt(SketchResolveParams parms)
     {
         parms.rect = new CellRect(parms.rect.Value.minX, parms.rect.Value.minZ, parms.rect.Value.Width,
             parms.rect.Value.Height);
